@@ -11,7 +11,6 @@ class GroupsController < ApplicationController
 
   def edit
     end
-  end
 
   def new
     @group = Group.new
@@ -55,3 +54,4 @@ end
   def group_params
     params.require(:group).permit(:title, :description)
   end
+end
